@@ -6,6 +6,49 @@ Build: 1.0
 http://www.andreagalanti.it
 */
 
+/*STYLE FOR HEADER*/
+.logo {
+  height: 100px;
+  width: 100%;
+  background-image: url(img/header/logo.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 50%;
+  margin-top: -50px; }
+
+  .fore-cake {
+  width: 960px;
+  height: 800px;
+  background-image: url(img/header/fore-cake.png);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  position: absolute;
+  left: 50%;
+  margin-left: -20%;
+  position: absolute;
+  top: 380px; }
+
+  .back-cake {
+  width: 960px;
+  height: 298px;
+  background-image: url(img/header/back-cake.png);
+  background-repeat: no-repeat;
+  background-position: top left;
+  position: absolute;
+  left: 60%;
+  top: 10%;
+  margin-left: -480px; }
+
+  .cake-box {
+  position: relative;
+  height: 600px;
+  background-image: url(img/header/cake-bg.jpg);
+  background-size: auto 600px;
+  background-position: top center;
+  background-attachment: fixed;
+  overflow: hidden; }
+
 @font-face {
   font-family: 'Lato';
   src: url('../fonts/lato/lato-black.eot');
