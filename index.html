@@ -65,7 +65,16 @@
 	</div>
 	
 	<!-- FullScreen -->
+<<<<<<< HEAD
+    <div class="intro-header">
+		<div class="col-xs-12 text-center abcen1">
+			<h1 class="h1_home wow fadeIn" data-wow-delay="0.4s">Pasteleria Lorena</h1>
+			<h3 class="h3_home wow fadeIn" data-wow-delay="0.6s">Aca iria la imagen 365</h3>
+			
+		</div>    
+=======
     <div>
+>>>>>>> master
         <!-- /.container -->
 		<div class="col-xs-12 text-center abcen wow fadeIn">
 			<div class="button_down "> 
@@ -109,10 +118,6 @@
 				<p class="lead" style="margin-top:0">Aca irian los pastelitos cupcakes, utensilios de cocina flotando</p>
 				
 			</div>
-			
-			
-				
-		
 		</div>
 	</div>
 
@@ -129,40 +134,67 @@
 	
 	<!-- Use it -->
     <div id ="useit" class="content-section-a">
-
         <div class="container">
 			aca tiene que ir el paste con los productos
-            <div id='hero'>
-			  <div class=' layer' data-depth='0.10' data-type='parallax'></div>
-			  <div class='layer-01 layer' data-depth='0.50' data-type='parallax'></div>
-			  <div class='layer-02 layer' data-depth='0.50' data-type='parallax'></div>
-			  <div class='layer-03 layer' data-depth='0.80' data-type='parallax'></div>
-			  <div class='layer-04 layer' data-depth='1.00' data-type='parallax'></div>
-			</div>
+			
         </div>
         <!-- /.container -->
     </div>
-				<script type="text/javascript">
-					window.addEventListener('scroll', function(event) {
-						var depth, i, layer, layers, len, movement, topDistance, translate3d;
-						topDistance = this.pageYOffset;
-						layers = document.querySelectorAll("[data-type='parallax']");
-						for (i = 0, len = layers.length; i < len; i++) {
-							layer = layers[i];
-							depth = layer.getAttribute('data-depth');
-							movement = -(topDistance * depth);
-							translate3d = 'translate3d(0, ' + movement + 'px, 0)';
-							layer.style['-webkit-transform'] = translate3d;
-							layer.style['-moz-transform'] = translate3d;
-							layer.style['-ms-transform'] = translate3d;
-							layer.style['-o-transform'] = translate3d;
-							layer.style.transform = translate3d;
-						}
-					});
-				</script>
-    
-
-    
+	
+			<img class="paral" src="imagenes/p1r.png" data-depth='0.60' data-type='parallax'>
+			<img class="paral" src="imagenes/p2r.png" data-depth='1.10' data-type='parallax'>
+			<img class="paral" src="imagenes/p3r.png" data-depth='1.70' data-type='parallax'>
+	<script type="text/javascript">
+	
+	window.addEventListener('scroll', function(event) {
+		var depth, i, layer, layers, len, movement, topDistance, translate3d;
+		topDistance = this.pageYOffset;
+		layers = document.querySelectorAll("[data-type='parallax']");
+		if(topDistance > 0)
+		{
+			topDistance = topDistance - 0;
+			for (i = 0, len = layers.length; i < len; i++) {
+				if(i == 0 && topDistance <650 )
+				{
+				
+					layer = layers[i];
+					depth = layer.getAttribute('data-depth');
+					movement = -(topDistance * depth);
+					translate3d = 'translate3d(0, ' + movement + 'px, 0)';
+					layer.style['-webkit-transform'] = translate3d;
+					layer.style['-moz-transform'] = translate3d;
+					layer.style['-ms-transform'] = translate3d;
+					layer.style['-o-transform'] = translate3d;
+					layer.style.transform = translate3d;
+				}
+				if(i == 1 && topDistance <=980 )
+				{
+					layer = layers[i];
+					depth = layer.getAttribute('data-depth');
+					movement = -(topDistance * depth);
+					translate3d = 'translate3d(0, ' + movement + 'px, 0)';
+					layer.style['-webkit-transform'] = translate3d;
+					layer.style['-moz-transform'] = translate3d;
+					layer.style['-ms-transform'] = translate3d;
+					layer.style['-o-transform'] = translate3d;
+					layer.style.transform = translate3d;
+				}
+				if(i == 2 && topDistance <=1035 )
+				{
+					layer = layers[i];
+					depth = layer.getAttribute('data-depth');
+					movement = -(topDistance * depth);
+					translate3d = 'translate3d(0, ' + movement + 'px, 0)';
+					layer.style['-webkit-transform'] = translate3d;
+					layer.style['-moz-transform'] = translate3d;
+					layer.style['-ms-transform'] = translate3d;
+					layer.style['-o-transform'] = translate3d;
+					layer.style.transform = translate3d;
+				}
+			}
+		}
+	});
+	</script>
 
 	<!-- Screenshot -->
 	<div id="screen" class="content-section-b">
@@ -186,7 +218,7 @@
 			<div class="row">
 			
 			<div class="col-md-6 col-md-offset-3 text-center wrap_title">
-				<h2>Contactenos</h2>
+				<h2>Contact Us</h2>
 				<p class="lead" style="margin-top:0">A special thanks to Death.</p>
 			</div>
 			
