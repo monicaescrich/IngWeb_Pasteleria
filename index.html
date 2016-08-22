@@ -1,17 +1,13 @@
- <!-- FlatFy Theme - Andrea Galanti /-->
+
 <!doctype html>
-<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
-<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
-<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
-<!--[if IE 9]>    <html class="no-js ie9" lang="en"> <![endif]-->
-<!--[if gt IE 9]><!--> <html> <!--<![endif]-->
+<html> 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
-    <meta name="description" content="Flatfy Free Flat and Responsive HTML5 Template ">
+    <meta name="description" content="Pasteleria Lorena">
     <meta name="author" content="">
 
-    <title>Flatfy – Free Flat and Responsive HTML5 Template</title>
+    <title>Pastelería Lorena</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -24,6 +20,7 @@
 	
     <!-- Custom CSS-->
     <link href="css/general.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 
     <!-- JavaScript-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
@@ -38,18 +35,9 @@
 	<!-- Magnific Popup core CSS file -->
 	<link rel="stylesheet" href="css/magnific-popup.css"> 
 	
-	<script src="js/modernizr-2.8.3.min.js"></script>  <!-- Modernizr /-->
-	<!--[if IE 9]>
-		<script src="js/PIE_IE9.js"></script>
-	<![endif]-->
-	<!--[if lt IE 9]>
-		<script src="js/PIE_IE678.js"></script>
-	<![endif]-->
-
-	<!--[if lt IE 9]>
-		<script src="js/html5shiv.js"></script>
-	<![endif]-->
-
+	<!-- Modernizr /-->
+	<script src="js/modernizr-2.8.3.min.js"></script>  
+	
 </head>
 
 <body id="home">
@@ -61,6 +49,32 @@
 	
 	<!-- FullScreen -->
     <div class="intro-header">
+    
+      <!-- Prueba -->
+    <div class="header">
+        <div class="header-left">
+            <ul>
+                <li class="animated wow fadeInLeftBig animated" data-wow-duration="1200ms" data-wow-delay="800ms" style="visibility: visible; animation-duration: 1200ms; animation-delay: 800ms; animation-name: fadeInLeftBig;">
+                    <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
+                        79 Avenida Escalon, San Salvador
+                    
+                </li>
+                  <li class="animated wow fadeInLeftBig animated" data-wow-duration="1200ms" data-wow-delay="800ms" style="visibility: visible; animation-duration: 1200ms; animation-delay: 800ms; animation-name: fadeInLeftBig;">
+                    <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>
+                        +503 2276 5479
+                    
+                </li>
+                  <li class="animated wow fadeInLeftBig animated" data-wow-duration="1200ms" data-wow-delay="800ms" style="visibility: visible; animation-duration: 1200ms; animation-delay: 800ms; animation-name: fadeInLeftBig;">
+                    <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+                        info@lorenabakery.com
+                    
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+    <!--Termina Prueba-->
+    
 		<div class="col-xs-12 text-center abcen1">
 			<h1 class="h1_home wow fadeIn" data-wow-delay="0.4s">Pasteleria Lorena</h1>
 			<h3 class="h3_home wow fadeIn" data-wow-delay="0.6s">Aca iria la imagen 360</h3>
@@ -73,7 +87,8 @@
 			</div>
 		</div>
     </div>
-	
+    
+  
 	<!-- NavBar-->
 	<nav class="navbar-default" role="navigation">
 		<div class="container">
@@ -100,7 +115,7 @@
 		</div>
 	</nav> 
 	
-	<!-- What is -->
+	<!-- Quienes somos -->
 	<div id="whatis" class="content-section-b" style="border-top: 0">
 		<div class="container">
 
@@ -109,10 +124,6 @@
 				<p class="lead" style="margin-top:0">Aca irian los pastelitos cupcakes, utensilios de cocina flotando</p>
 				
 			</div>
-			
-			
-				
-		
 		</div>
 	</div>
 	
@@ -131,42 +142,84 @@
         </div>
         <!-- /.container -->
     </div>
-				<script type="text/javascript">
-					window.addEventListener('scroll', function(event) {
-						var depth, i, layer, layers, len, movement, topDistance, translate3d;
-						topDistance = this.pageYOffset;
-						layers = document.querySelectorAll("[data-type='parallax']");
-						for (i = 0, len = layers.length; i < len; i++) {
-							layer = layers[i];
-							depth = layer.getAttribute('data-depth');
-							movement = -(topDistance * depth);
-							translate3d = 'translate3d(0, ' + movement + 'px, 0)';
-							layer.style['-webkit-transform'] = translate3d;
-							layer.style['-moz-transform'] = translate3d;
-							layer.style['-ms-transform'] = translate3d;
-							layer.style['-o-transform'] = translate3d;
-							layer.style.transform = translate3d;
-						}
-					});
-				</script>
-    
+   
 
-    
-
-	<!-- Screenshot -->
-	<div id="screen" class="content-section-b">
-        <div class="container">
-          <div class="row" >
-			 <div class="col-md-6 col-md-offset-3 text-center wrap_title ">
-				<h2>Nuestros chefs</h2>
-				<p class="lead" style="margin-top:0">Imagenes de chefsitos</p>
-			 </div>
-		  </div>
-		   
-        </div>
-
-
+	<!-- TEAM -->
+    <!-- team section -->
+<section id="team">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 col-sm-12">
+				<div class="section-title">
+					<strong>03</strong>
+					<h1 class="heading bold">Nuestro equipo</h1>
+					<hr>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-6 wow fadeIn" data-wow-delay="0.9s">
+				<div class="team-wrapper">
+					<img src="imagenes/team-img-1.jpg" class="img-responsive" alt="team img">
+						<div class="team-des">
+							<h4>Javier Martinez</h4>
+							<h3>Main Chef</h3>
+							<hr>
+							<ul class="social-icon">
+								<li><a href="#" class="fa fa-facebook wow fadeIn" data-wow-delay="0.3s"></a></li>
+								<li><a href="#" class="fa fa-twitter wow fadeIn" data-wow-delay="0.6s"></a></li>
+								<li><a href="#" class="fa fa-dribbble wow fadeIn" data-wow-delay="0.9s"></a></li>
+							</ul>
+						</div>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-6 wow fadeIn" data-wow-delay="1.3s">
+				<div class="team-wrapper">
+					<img src="imagenes/team-img-2.jpg" class="img-responsive" alt="team img">
+						<div class="team-des">
+							<h4>Maria Siguenza</h4>
+							<h3>Main Chef</h3>
+							<hr>
+							<ul class="social-icon">
+								<li><a href="#" class="fa fa-facebook wow fadeIn" data-wow-delay="0.3s"></a></li>
+								<li><a href="#" class="fa fa-twitter wow fadeIn" data-wow-delay="0.6s"></a></li>
+								<li><a href="#" class="fa fa-dribbble wow fadeIn" data-wow-delay="0.9s"></a></li>
+							</ul>
+						</div>
+				</div>
+			</div>
+			
+			<div class="col-md-3 col-sm-6 wow fadeIn" data-wow-delay="1.6s">
+				<div class="team-wrapper">
+					<img src="imagenes/team-img-4.jpg" class="img-responsive" alt="team img">
+						<div class="team-des">
+							<h4>Elmer Jimenez</h4>
+							<h3>Main Chef</h3>
+							<hr>
+							<ul class="social-icon">
+								<li><a href="#" class="fa fa-facebook wow fadeIn" data-wow-delay="0.3s"></a></li>
+								<li><a href="#" class="fa fa-twitter wow fadeIn" data-wow-delay="0.6s"></a></li>
+								<li><a href="#" class="fa fa-dribbble wow fadeIn" data-wow-delay="0.9s"></a></li>
+							</ul>
+						</div>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-6 wow fadeIn" data-wow-delay="1.3s">
+				<div class="team-wrapper">
+					<img src="imagenes/team-img-3.jpg" class="img-responsive" alt="team img">
+						<div class="team-des">
+							<h4>Jorge Sosa</h4>
+							<h3>Main Chef</h3>
+							<hr>
+							<ul class="social-icon">
+								<li><a href="#" class="fa fa-facebook wow fadeIn" data-wow-delay="0.3s"></a></li>
+								<li><a href="#" class="fa fa-twitter wow fadeIn" data-wow-delay="0.6s"></a></li>
+								<li><a href="#" class="fa fa-dribbble wow fadeIn" data-wow-delay="0.9s"></a></li>
+							</ul>
+						</div>
+				</div>
+			</div>
+		</div>
 	</div>
+</section>
 	
 	
 	<!-- Contact -->
@@ -231,9 +284,38 @@
 		</div>
 	</div>
 	
+	<!--Otro Prueba-->
+	<div class="content-section-b">
+			<div class="container">
+
+				<div class="row">
+					<div class="col-md-12">
+						<div class="row">
+							<div class="col-md-6">
+								<h2>Hazlo con pasión</h2>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar. The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen.</p>
+					</div>
+					<div class="col-md-6">
+						<p>She packed her seven versalia, put her initial into the belt and made herself on the way. When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane.</p>
+					</div>
+				</div>
+				
+				<div class="row">
+				    <div class="col-md-4"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto omnis quia labore, nobis excepturi. Repellendus autem possimus, natus tempora accusamus accusantium fugiat maiores expedita, quasi nostrum. Accusamus, nihil aspernatur voluptas.</p></div>
+				    <div class="col-md-4"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, deleniti quisquam sapiente soluta omnis vitae, provident veritatis, minus unde culpa cumque. Cumque impedit perspiciatis quos, dolorem commodi, officia eius omnis.</p></div>
+				    <div class="col-md-4"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum soluta cupiditate possimus pariatur modi autem ad ducimus accusantium, aut est quasi, sed numquam, tempora tenetur dicta sint beatae cumque dolorem.</p></div>
+				</div>
+
+			</div>
+		</div>
 	
 	
-    <footer>
+	<!--footer-->
+	<footer>
       <div class="container">
         <div class="row">
           <div class="col-md-7">
@@ -255,6 +337,27 @@
         </div>
       </div>
     </footer>
+   
+   
+    <!-- JS-->
+    <script type="text/javascript">
+           window.addEventListener('scroll', function(event) {
+						var depth, i, layer, layers, len, movement, topDistance, translate3d;
+						topDistance = this.pageYOffset;
+						layers = document.querySelectorAll("[data-type='parallax']");
+						for (i = 0, len = layers.length; i < len; i++) {
+							layer = layers[i];
+							depth = layer.getAttribute('data-depth');
+							movement = -(topDistance * depth);
+							translate3d = 'translate3d(0, ' + movement + 'px, 0)';
+							layer.style['-webkit-transform'] = translate3d;
+							layer.style['-moz-transform'] = translate3d;
+							layer.style['-ms-transform'] = translate3d;
+							layer.style['-o-transform'] = translate3d;
+							layer.style.transform = translate3d;
+						}
+					});
+    </script>
 
     <!-- JavaScript -->
     <script src="js/jquery-1.10.2.js"></script>
