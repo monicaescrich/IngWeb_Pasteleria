@@ -15,7 +15,7 @@
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link type="text/css" rel="stylesheet" href="css/estilo.css" media="screen,projection"/>
+    <!--link type="text/css" rel="stylesheet" href="css/estilo.css" media="screen,projection"-->
  
     <!-- Custom Google Web Font -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
@@ -40,6 +40,9 @@
 	<link rel="stylesheet" href="css/magnific-popup.css"> 
 	
 	<script src="js/modernizr-2.8.3.min.js"></script>  <!-- Modernizr /-->
+	<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+	<script src="js/cupcake.js"></script>
+	
 	<!--[if IE 9]>
 		<script src="js/PIE_IE9.js"></script>
 	<![endif]-->
@@ -99,41 +102,57 @@
 		   
 		</div>
 	</nav> 
+	
 	<!-- What is -->
-	<div id="whatis" class="content-section-b" style="border-top: 0">
+	
 		<div class="container">
 
-			<div class="col-md-6 col-md-offset-3 text-center wrap_title">
-				<h2>¿Quienes somos?</h2>
-				<p class="lead" style="margin-top:0">Aca irian los pastelitos cupcakes, utensilios de cocina flotando</p>
-				
-			</div>
-		</div>
-	</div>
+			<div class="QS">
+				<div id="parallax">
+				  <div data-depth="0.6" class="layer">
+				    <div class="some-space">
+				      <h1 class="h1qs">¿Quienes Somos?</h1>
+				      <img class="imgqs" src="http://img07.deviantart.net/1381/i/2013/216/b/b/pinkie_pie_cupcake_by_magicdog93-d6gp791.png" alt=""/>
+				    </div>
+				  </div>
+				 
+				  <div data-depth="0.3" class="layer">
+				    <div class="some-more-space">
+				      <h2 class="h2qs">Panadería Tecleña fue fundada en el año 1965, en la ciudad de Santa Tecla, por una mujer de visión empresarial con enfoque social, quien a sus 39 años asume el reto de crear la panadería. En sus inicios su especialidad fue la elaboración del pan artesanal según las recetas de su creadora.
 
-	<div id="whatis" class="content-section-b" style="border-top: 0">
+				Su nombre inicial fue Panadería Las Victorias, pero en el año 1987 surge como como: </h2>
+				    </div>
+				  </div>
+				</div>
+				</div>
+		</div>
+		<script type="text/javascript">
+			 $('#parallax').parallax({
+				invertX: true,
+				invertY: true,
+				scalarX: 10,
+				 frictionY: .1
+			});
+		</script>
+
+
+	
 		<div class="container">
 
 			<iframe width="80%" height="100%" allowfullscreen style="border-style:none;" src="pannellum.htm?panorama=img/panoramic/2.jpg&amp;title=Visita%20Nuestro%20Local&amp;preview=img/panoramic/examplepano-preview.jpg"></iframe>
-			
-			
-				
 		
 		</div>
-	</div>
+	
 	
 	<!-- Use it -->
-    <div id ="useit" class="content-section-a">
-        <div class="container">
-			aca tiene que ir el paste con los productos
-			
-        </div>
+    <div id ="useit">
+        
         <!-- /.container -->
     </div>
 	
-			<img class="paral" src="imagenes/p1r.png" data-depth='0.60' data-type='parallax'>
-			<img class="paral" src="imagenes/p2r.png" data-depth='1.10' data-type='parallax'>
-			<img class="paral" src="imagenes/p3r.png" data-depth='1.70' data-type='parallax'>
+			<img class="paral" src="imagenes/6p1r.pngs" data-depth='0.60' data-type='parallax'>
+			<img class="paral" src="imagenes/p52r.pngs" data-depth='1.10' data-type='parallax'>
+			<img class="paral" src="imagenes/p363r.pngs" data-depth='1.70' data-type='parallax'>
 	<script type="text/javascript">
 	
 	window.addEventListener('scroll', function(event) {
@@ -185,7 +204,7 @@
 		}
 	});
 	</script>
-
+    <br/><br/><br/><br/><br/><br/><br/><br/>
 	<!-- Screenshot -->
 	<div id="screen" class="content-section-b">
         <div class="container">
@@ -317,6 +336,7 @@
 	<script src="js/uiMorphingButton_inflow.js"></script>
 	<!-- Magnific Popup core JS file -->
 	<script src="js/jquery.magnific-popup.js"></script> 
+
 </body>
 
 </html>
