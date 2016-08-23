@@ -173,7 +173,7 @@
         break;
       case '3D':
         if (propertySupport) {
-          var body = document.body || document.createElement('body');
+          var body = document.body || document.createElement('div');
           var documentElement = document.documentElement;
           var documentOverflow = documentElement.style.overflow;
           if (!document.body) {

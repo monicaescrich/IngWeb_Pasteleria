@@ -1255,9 +1255,10 @@ p.copyright {
 @import url(http://fonts.googleapis.com/css?family=Lato:400,300,100);
  .QS {
   font-family: "Lato";
-  background: #2980b9;
+  background: #F8E0F7;
   overflow: hidden;
-  height: 100%;
+  margin: 0;
+  height: 500px;
   width: 100%;
   -webkit-font-smoothing: antialiased;
   -webkit-user-select: none;
