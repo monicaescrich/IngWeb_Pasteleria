@@ -15,7 +15,7 @@
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link type="text/css" rel="stylesheet" href="css/estilo.css" media="screen,projection"/>
+    <!--link type="text/css" rel="stylesheet" href="css/estilo.css" media="screen,projection"-->
  
     <!-- Custom Google Web Font -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
@@ -40,6 +40,9 @@
 	<link rel="stylesheet" href="css/magnific-popup.css"> 
 	
 	<script src="js/modernizr-2.8.3.min.js"></script>  <!-- Modernizr /-->
+	<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+	<script src="js/cupcake.js"></script>
+	
 	<!--[if IE 9]>
 		<script src="js/PIE_IE9.js"></script>
 	<![endif]-->
@@ -65,16 +68,7 @@
 	</div>
 	
 	<!-- FullScreen -->
-<<<<<<< HEAD
-    <div class="intro-header">
-		<div class="col-xs-12 text-center abcen1">
-			<h1 class="h1_home wow fadeIn" data-wow-delay="0.4s">Pasteleria Lorena</h1>
-			<h3 class="h3_home wow fadeIn" data-wow-delay="0.6s">Aca iria la imagen 365</h3>
-			
-		</div>    
-=======
     <div>
->>>>>>> master
         <!-- /.container -->
 		<div class="col-xs-12 text-center abcen wow fadeIn">
 			<div class="button_down "> 
@@ -110,64 +104,68 @@
 	</nav> 
 	
 	<!-- What is -->
-	<div id="whatis" class="content-section-b" style="border-top: 0">
-		<div class="container">
+	
+		<div class="container" style="margin-left:0; width:100%">
+		<div class="row">
+			<div class="QS">
+				<div id="parallax">
+				  <div data-depth="0.6" class="layer">
+				    <div class="some-space">
+				      <h1 class="h1qs">¿Quienes Somos?</h1>
+				      <img class="imgqs" src="http://img07.deviantart.net/1381/i/2013/216/b/b/pinkie_pie_cupcake_by_magicdog93-d6gp791.png" alt=""/>
+				    </div>
+				  </div>
+				 
+				  <div data-depth="0.3" class="layer">
+				    <div class="some-more-space">
+				      <h2 class="h2qs">Panadería Tecleña fue fundada en el año 1965, en la ciudad de Santa Tecla, por una mujer de visión empresarial con enfoque social, quien a sus 39 años asume el reto de crear la panadería. En sus inicios su especialidad fue la elaboración del pan artesanal según las recetas de su creadora.
 
-			<div class="col-md-6 col-md-offset-3 text-center wrap_title">
-				<h2>¿Quienes somos?</h2>
-				<p class="lead" style="margin-top:0">Aca irian los pastelitos cupcakes, utensilios de cocina flotando</p>
-				
+				Su nombre inicial fue Panadería Las Victorias, pero en el año 1987 surge como como: </h2>
+				    </div>
+				  </div>
+				</div>
+				</div>
 			</div>
 		</div>
-	</div>
+		<script type="text/javascript">
+			 $('#parallax').parallax({
+				invertX: true,
+				invertY: true,
+				scalarX: 10,
+				 frictionY: .1
+			});
+		</script>
 
-	<div id="whatis" class="content-section-b" style="border-top: 0">
+
+	
 		<div class="container">
 
 			<iframe width="80%" height="100%" allowfullscreen style="border-style:none;" src="pannellum.htm?panorama=img/panoramic/2.jpg&amp;title=Visita%20Nuestro%20Local&amp;preview=img/panoramic/examplepano-preview.jpg"></iframe>
-			
-			
-				
 		
 		</div>
-	</div>
+	
 	
 	<!-- Use it -->
-    <div id ="useit" class="content-section-a">
-        <div class="container">
-			aca tiene que ir el paste con los productos
-			
-        </div>
+    <div id ="useit">
+        
         <!-- /.container -->
     </div>
 	
-			<img class="paral" src="imagenes/p1r.png" data-depth='0.60' data-type='parallax'>
-			<img class="paral" src="imagenes/p2r.png" data-depth='1.10' data-type='parallax'>
-			<img class="paral" src="imagenes/p3r.png" data-depth='1.70' data-type='parallax'>
+			<img class="capa capa1" src="imagenes/p1r.png" data-depth='0.40' data-type='parallax'><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+			<img class="capa capa2" src="imagenes/p2r.png" data-depth='1.15' data-type='parallax'>
+			<img class="capa capa3" src="imagenes/p3r.png" data-depth='2.10' data-type='parallax'>
 	<script type="text/javascript">
 	
 	window.addEventListener('scroll', function(event) {
 		var depth, i, layer, layers, len, movement, topDistance, translate3d;
 		topDistance = this.pageYOffset;
 		layers = document.querySelectorAll("[data-type='parallax']");
-		if(topDistance > 0)
+		if(topDistance > 600 && topDistance <=1630)
 		{
-			topDistance = topDistance - 0;
+			
+			topDistance = topDistance - 600;
 			for (i = 0, len = layers.length; i < len; i++) {
-				if(i == 0 && topDistance <650 )
-				{
-				
-					layer = layers[i];
-					depth = layer.getAttribute('data-depth');
-					movement = -(topDistance * depth);
-					translate3d = 'translate3d(0, ' + movement + 'px, 0)';
-					layer.style['-webkit-transform'] = translate3d;
-					layer.style['-moz-transform'] = translate3d;
-					layer.style['-ms-transform'] = translate3d;
-					layer.style['-o-transform'] = translate3d;
-					layer.style.transform = translate3d;
-				}
-				if(i == 1 && topDistance <=980 )
+				if(i == 0 && topDistance <=300 )
 				{
 					layer = layers[i];
 					depth = layer.getAttribute('data-depth');
@@ -179,7 +177,19 @@
 					layer.style['-o-transform'] = translate3d;
 					layer.style.transform = translate3d;
 				}
-				if(i == 2 && topDistance <=1035 )
+				if(i == 1 && topDistance <=420 )
+				{
+					layer = layers[i];
+					depth = layer.getAttribute('data-depth');
+					movement = -(topDistance * depth);
+					translate3d = 'translate3d(0, ' + movement + 'px, 0)';
+					layer.style['-webkit-transform'] = translate3d;
+					layer.style['-moz-transform'] = translate3d;
+					layer.style['-ms-transform'] = translate3d;
+					layer.style['-o-transform'] = translate3d;
+					layer.style.transform = translate3d;
+				}
+				if(i == 2 && topDistance <=560 )
 				{
 					layer = layers[i];
 					depth = layer.getAttribute('data-depth');
@@ -193,9 +203,51 @@
 				}
 			}
 		}
+		else if (topDistance > 1600 && topDistance < 1600)
+		{
+			topDistance = topDistance - 400;
+			for (i = 0, len = layers.length; i < len; i++) {
+				if(i == 0 )
+				{
+					layer = layers[i];
+					depth = layer.getAttribute('data-depth');
+					movement = -(topDistance * depth) + ((topDistance-520)*depth) + ((topDistance - 1030)  * 0);
+					translate3d = 'translate3d(0, ' + movement + 'px, 0)';
+					layer.style['-webkit-transform'] = translate3d;
+					layer.style['-moz-transform'] = translate3d;
+					layer.style['-ms-transform'] = translate3d;
+					layer.style['-o-transform'] = translate3d;
+					layer.style.transform = translate3d;
+				}
+				if(i == 1 )
+				{
+					layer = layers[i];
+					depth = layer.getAttribute('data-depth');
+					movement = -(topDistance * depth) + ((topDistance - 520)*depth) + ((topDistance - 1030)  * 0);
+					translate3d = 'translate3d(0, ' + movement + 'px, 0)';
+					layer.style['-webkit-transform'] = translate3d;
+					layer.style['-moz-transform'] = translate3d;
+					layer.style['-ms-transform'] = translate3d;
+					layer.style['-o-transform'] = translate3d;
+					layer.style.transform = translate3d;
+				}
+				if(i == 2)
+				{
+					layer = layers[i];
+					depth = layer.getAttribute('data-depth');
+					movement = -(topDistance * depth) + ((topDistance - 630)*depth) + ((topDistance - 1030)  * 0);
+					translate3d = 'translate3d(0, ' + movement + 'px, 0)';
+					layer.style['-webkit-transform'] = translate3d;
+					layer.style['-moz-transform'] = translate3d;
+					layer.style['-ms-transform'] = translate3d;
+					layer.style['-o-transform'] = translate3d;
+					layer.style.transform = translate3d;
+				}
+			}
+		}
 	});
 	</script>
-
+    <br/><br/><br/><br/><br/><br/><br/><br/>
 	<!-- Screenshot -->
 	<div id="screen" class="content-section-b">
         <div class="container">
@@ -327,6 +379,7 @@
 	<script src="js/uiMorphingButton_inflow.js"></script>
 	<!-- Magnific Popup core JS file -->
 	<script src="js/jquery.magnific-popup.js"></script> 
+
 </body>
 
 </html>
