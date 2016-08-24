@@ -1252,3 +1252,100 @@ p.copyright {
 	}
 
 }
+@import url(http://fonts.googleapis.com/css?family=Lato:400,300,100);
+ .QS {
+  font-family: "Lato";
+  background: #F8E0F7;
+  overflow: hidden;
+  margin: 0;
+  height: 500px;
+  width: 100%;
+  -webkit-font-smoothing: antialiased;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.imgqs{
+  padding-left:850px;
+  height:500px;
+}
+
+ #parallax, .layer, .some-space, .some-more-space {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+#particles-js {
+  opacity: 0.6;
+}
+
+.h1qs {
+  color: black;
+  font-size: 5em;
+  font-weight: 100;
+  letter-spacing: 0.2em;
+  position: absolute;
+  top: 10%;
+  left: 35%;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+          transform: translate3d(-50%, -50%, 0);
+}
+.h2qs {
+  color: black;
+  font-size: 22px;
+  font-weight: 100;
+  letter-spacing: 0.2px;
+  position: absolute;
+  top: 40%;
+  left: 35%;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+          transform: translate3d(-50%, -50%, 0);
+}
+
+
+
+.some-space {
+  -webkit-animation: rotate 18s 0.5s infinite linear reverse;
+          animation: rotate 18s 0.5s infinite linear reverse;
+}
+
+.some-more-space {
+  -webkit-animation: rotate 15s 0.1s infinite linear;
+          animation: rotate 15s 0.1s infinite linear;
+}
+
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotateZ(0deg) translate3d(0, 1.5%, 0) rotateZ(0deg);
+            transform: rotateZ(0deg) translate3d(0, 1.5%, 0) rotateZ(0deg);
+  }
+  100% {
+    -webkit-transform: rotateZ(360deg) translate3d(0, 1.5%, 0) rotateZ(-360deg);
+            transform: rotateZ(360deg) translate3d(0, 1.5%, 0) rotateZ(-360deg);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotateZ(0deg) translate3d(0, 1.5%, 0) rotateZ(0deg);
+            transform: rotateZ(0deg) translate3d(0, 1.5%, 0) rotateZ(0deg);
+  }
+  100% {
+    -webkit-transform: rotateZ(360deg) translate3d(0, 1.5%, 0) rotateZ(-360deg);
+            transform: rotateZ(360deg) translate3d(0, 1.5%, 0) rotateZ(-360deg);
+  }
+}
+.capa{
+	position: absolute;
+}
+.capa1{
+	top: 10px;
+}
+.capa2{
+	top: 2000px;
+}
+.capa3{
+	top: 2300px;
+}
