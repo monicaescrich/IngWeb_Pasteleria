@@ -6,6 +6,8 @@
 .parallax-section {
   background-attachment: fixed !important;
   background-size: cover !important;
+  
+
 }
 
 
@@ -75,7 +77,7 @@ footer .fa {
 
 /* copyright section */
 #copyright {
-  background: #1abc9c;
+  background: #20B89A;
   color: #ffffff;
   padding-top: 80px;
   padding-bottom: 80px;
@@ -89,4 +91,9 @@ footer .fa {
 }
 #copyright a:hover {
   color: #FF0;
+}
+
+mensaje h3{
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
