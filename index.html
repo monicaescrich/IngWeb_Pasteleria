@@ -39,6 +39,10 @@
     
     <!-- JavaScript-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    
+    <!--MapBox-->
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.22.1/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.22.1/mapbox-gl.css' rel='stylesheet' />
 
 </head>
 <body id="home">
@@ -231,67 +235,7 @@
 </section>
 	
 	
-	<!-- Contact -->
-	<div  class="content-section-a">
-		<div class="container">
-			<div class="row">
-			
-			<div class="col-md-6 col-md-offset-3 text-center wrap_title">
-				<h2>Contactenos</h2>
-				<p class="lead" style="margin-top:0">A special thanks to Death.</p>
-			</div>
-			
-			<form role="form" action="" method="post" >
-				<div class="col-md-6">
-					<div class="form-group">
-						<label for="InputName">Escribe tu nombre</label>
-						<div class="input-group">
-							<input type="text" class="form-control" name="InputName" id="InputName" placeholder="Enter Name" required>
-							<span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span>
-						</div>
-					</div>
-					
-					<div class="form-group">
-						<label for="InputEmail">Tu correo electronico</label>
-						<div class="input-group">
-							<input type="email" class="form-control" id="InputEmail" name="InputEmail" placeholder="Enter Email" required  >
-							<span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span>
-						</div>
-					</div>
-					
-					<div class="form-group">
-						<label for="InputMessage">Mensaje</label>
-						<div class="input-group">
-							<textarea name="InputMessage" id="InputMessage" class="form-control" rows="5" required></textarea>
-							<span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span>
-						</div>
-					</div>
-
-					<input type="submit" name="submit" id="submit" value="Submit" class="btn wow tada btn-embossed btn-primary pull-right">
-				</div>
-			</form>
-			
-			<hr class="featurette-divider hidden-lg">
-				<div class="col-md-5 col-md-push-1 address">
-					<address>
-					<h3>Office Location</h3>
-					<p class="lead"><a href="https://www.google.com/maps/preview?ie=UTF-8&q=The+Pentagon&fb=1&gl=us&hq=1400+Defense+Pentagon+Washington,+DC+20301-1400&cid=12647181945379443503&ei=qmYfU4H8LoL2oATa0IHIBg&ved=0CKwBEPwSMAo&safe=on">The Pentagon<br>
-					Washington, DC 20301</a><br>
-					Phone: XXX-XXX-XXXX<br>
-					Fax: XXX-XXX-YYYY</p>
-					</address>
-
-					<h3>Social</h3>
-					<li class="social"> 
-					<a href="#"><i class="fa fa-facebook-square fa-size"> </i></a>
-					<a href="#"><i class="fa  fa-twitter-square fa-size"> </i> </a> 
-					<a href="#"><i class="fa fa-google-plus-square fa-size"> </i></a>
-					<a href="#"><i class="fa fa-flickr fa-size"> </i> </a>
-					</li>
-				</div>
-			</div>
-		</div>
-	</div>
+	
 	
 	
 	
@@ -331,8 +275,8 @@
 				
 				<h3 class="heading">Horario</h3>
 				    <p>Lunes-Viernes <span>9:00 AM - 8:00 PM</span></p>
-				    <p>Sabado <span>11:30 AM - 10:00 PM</span></p>
-					<p>Domingo <span>10:30 AM - 10:00 PM</span></p>
+				    <p>Sabado <span>11:30 AM - 5:00 PM</span></p>
+					<p>Domingo <span>10:30 AM - 5:00 PM</span></p>
 					
 			</div>
 			<div class="col-md-4 col-xs-12 wow fadeInUp" data-wow-delay="0.6s">
@@ -388,6 +332,22 @@
 
 	</div>
 </footer>
+ 
+ <!-- Sucursales -->
+<div  class="content-section-a slide">
+    
+      <div class="iframe_mapa">
+       <div class="iframe_mapa">
+          <img class="ratio" src="imagenes/ratio.png">
+          
+          <iframe src="https://www.google.com/maps/d/embed?mid=1o_kvFpCWc-rTdiw1NgTDcOHokGc"></iframe>
+          
+          
+      </div> 
+    </div>
+</div>
+			
+
   
   
 <!-- CopyRight  -->
