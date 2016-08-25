@@ -151,8 +151,8 @@
         <!-- /.container -->
     </div>
 	
-			<img class="capa capa1" src="imagenes/p1r.png" data-depth='0.40' data-type='parallax'><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-			<img class="capa capa2" src="imagenes/p2r.png" data-depth='1.15' data-type='parallax'>
+			<img class="capa capa1" src="imagenes/p1r.png" data-depth='0.50' data-type='parallax'><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+			<img class="capa capa2" src="imagenes/p2r.png" data-depth='1.35' data-type='parallax'>
 			<img class="capa capa3" src="imagenes/p3r.png" data-depth='2.10' data-type='parallax'>
 	<script type="text/javascript">
 	
@@ -162,10 +162,9 @@
 		layers = document.querySelectorAll("[data-type='parallax']");
 		if(topDistance > 600 && topDistance <=1630)
 		{
-			
-			topDistance = topDistance - 600;
+			topDistance = topDistance - 560;
 			for (i = 0, len = layers.length; i < len; i++) {
-				if(i == 0 && topDistance <=300 )
+				if(i == 0 && topDistance <=520 )
 				{
 					layer = layers[i];
 					depth = layer.getAttribute('data-depth');
@@ -177,7 +176,7 @@
 					layer.style['-o-transform'] = translate3d;
 					layer.style.transform = translate3d;
 				}
-				if(i == 1 && topDistance <=420 )
+				if(i == 1 && topDistance <=530 )
 				{
 					layer = layers[i];
 					depth = layer.getAttribute('data-depth');
@@ -189,7 +188,7 @@
 					layer.style['-o-transform'] = translate3d;
 					layer.style.transform = translate3d;
 				}
-				if(i == 2 && topDistance <=560 )
+				if(i == 2 && topDistance <=600 )
 				{
 					layer = layers[i];
 					depth = layer.getAttribute('data-depth');
