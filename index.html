@@ -349,14 +349,20 @@
                 <form role="form" method="post">
                       
                        <div class="form-group">
-                          <label for="InputName">Escribe tu nombre</label>
-                         <input type="text" name="name" value="" placeholder="Name">
+                         <label for="InputName">Escribe tu nombre</label>
+						<div class="input-group">
+							<input type="text" class="form-control" name="InputName" id="InputName" placeholder="Enter Name" required>
+							<span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span>
+						</div>
                        </div>
                        
                       <div class="form-group">
-                        <label for="InputName">Escribe tu nombre</label>
-                        <input id="InputName" type="email" name="email" value="" placeholder="Email">
-                    </div>
+                        <label for="InputEmail">Tu correo electronico</label>
+						<div class="input-group">
+							<input type="email" class="form-control" id="InputEmail" name="InputEmail" placeholder="Enter Email" required  >
+							<span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span>
+						</div>
+                     </div>
                     
                     <div class="form-group">
                         <label for="InputMessage">Mensaje</label>

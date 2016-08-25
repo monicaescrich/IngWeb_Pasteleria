@@ -6,14 +6,12 @@
 .parallax-section {
   background-attachment: fixed !important;
   background-size: cover !important;
-  
-
 }
 
 
 /* footer section */
 footer {
-  background: url('../imagenes/huevos_harina.jpg') 50% 0 repeat-y fixed;
+  background: url('../imagenes/cheesecake.jpg') 50% 0 repeat-y fixed;
   -webkit-background-size: cover;
   background-size: cover;
   background-position: center;
