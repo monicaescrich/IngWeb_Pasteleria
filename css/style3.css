@@ -88,7 +88,7 @@ footer .fa {
   color: #ffffff;
 }
 #copyright a:hover {
-  color: #FF0;
+  color: #F0F1F2;
 }
 
 mensaje h3{
@@ -96,7 +96,7 @@ mensaje h3{
     margin-bottom: 10px;
 }
 
-/*
+
 .slider {
 	max-width: 100%;
 }
@@ -112,7 +112,7 @@ mensaje h3{
 	width:100%;
 }
 
-*/
+
 .iframe_mapa {
 	position:relative;
 }
