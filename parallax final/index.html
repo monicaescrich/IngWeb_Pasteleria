@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Ejemplo Parallax</title>
+<link rel="stylesheet" href="estilo.css">
+<!--Etiqueta para el SLIDER -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+
+
+<!-- ACA SE COLOCA LAS FUNCIONES DE JAVASCRIPT -->
+<script>
+  $(document).ready(function(){
+			$('section[data-type="parallax_section"]').each(function(){
+				    var $bgobjeto = $(this);
+					$(window).scroll(function(){
+					$window = $(window);
+					var yPos = -(windows.scrollTop() / $bgobjeto.data('speed'))
+					var coords = '50%' + yPos + 'px'
+					
+					$bgobjeto.css({backgroundPosition: coords});
+				});
+			});
+		});
+</script>
+</head>
+<body>
+
+<!-- Creacion de las secciones en que se dividira la pagina -->
+
+<!-- Primera seccion -->
+<section id="home" data-type="parallax_section" data-speed="10">
+<div class="geek"></div>
+<h2> Pagina 1</h2>
+<!-- Creacion del slider -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/panaderia1.jpg" alt="panaderia-1" title="panaderia-1" id="wows1_0"/></li>
+		<li><img src="data1/images/panaderia2.jpg" alt="panaderia-2" title="panaderia-2" id="wows1_1"/></li>
+		<li><img src="data1/images/panaderia3.jpg" alt="panaderia-3" title="panaderia-3" id="wows1_2"/></li>
+		<li><a href="http://wowslider.com/vi"><img src="data1/images/panaderia4.jpg" alt="css slider" title="panaderia-4" id="wows1_3"/></a></li>
+		<li><img src="data1/images/panaderia5.jpg" alt="panaderia-5" title="panaderia-5" id="wows1_4"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#wows1_0" title="panaderia-1"><span><img src="data1/tooltips/panaderia1.jpg" alt="panaderia-1"/>1</span></a>
+		<a href="#wows1_1" title="panaderia-2"><span><img src="data1/tooltips/panaderia2.jpg" alt="panaderia-2"/>2</span></a>
+		<a href="#wows1_2" title="panaderia-3"><span><img src="data1/tooltips/panaderia3.jpg" alt="panaderia-3"/>3</span></a>
+		<a href="#wows1_3" title="panaderia-4"><span><img src="data1/tooltips/panaderia4.jpg" alt="panaderia-4"/>4</span></a>
+		<a href="#wows1_4" title="panaderia-5"><span><img src="data1/tooltips/panaderia5.jpg" alt="panaderia-5"/>5</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com/vi">css slider</a></div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+</section>
+
+<!-- Segund seccion seccion -->
+<section id="section2" data-type="parallax_section" data-speed="10">
+<article>
+<div class="geek"></div>
+<h2> Pagina 2</h2>
+</article>
+</section>
+
+<!-- Tercera seccion -->
+<section id="section3" data-type="parallax_section" data-speed="10">
+<article>
+<div class="geek"></div>
+<h2> Pagina 3</h2>
+</article>
+</section>
+
+<!-- Cuarta seccion -->
+<section id="section4" data-type="parallax_section" data-speed="10">
+<article
+<div class="geek"></div>
+<h2> Pagina 4</h2>
+</article>
+</section>
+
+<!-- Quinta seccion -->
+<section id="section5" data-type="parallax_section" data-speed="10">
+<article>
+<div class="geek"></div>
+<h2> Pagina 5</h2>
+</article>
+</section>
+
+</body>
+</html>

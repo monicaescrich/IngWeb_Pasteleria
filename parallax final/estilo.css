@@ -1,0 +1,63 @@
+*, html{
+ margin: 0px;
+ padding: 0px;
+}
+
+h2{
+	color:#fff;
+	font-family: helvetica;
+	text-align:center;
+}
+
+
+#home{
+	background-color:#F3E2A9;
+}
+
+#section2{
+	background: url(imagenes/panaderia-2.jpg)
+}
+
+#section3{
+	background: url(imagenes/panaderia-3.jpg) 50% 0 no-repeat fixed;
+}
+
+#section4{
+	background: url(imagenes/panaderia-4.jpg) 50% 0 no-repeat fixed;
+}
+
+#section5{
+	background: url(imagenes/panaderia-5.jpg) 50% 0 no-repeat fixed;
+}
+
+#home, #section2, #section3, #section4, #section5{
+	margin: 0px, auto;
+	max-width:1920px;
+	min-height:700px;
+	position:relative;
+	width: 100%;
+   -webkit-background-size:cover;
+   -moz-background-size:cover;
+   -o-background-size:cover;
+    background-size:cover;
+}
+
+#section2, #section3, #section4, #section5{
+	box-shadow: 0 0 20px rgba(0,0,0,0.4);
+	-webkit-box-shadow: 0 0 20px rgba(0,0,0,0.4);
+}
+
+article{
+	padding:100px;
+}
+
+.geek{
+	background:url();
+	display:block;
+	height: 368px;
+	margin:0px auto;
+	width:517px;
+}
+
+
+
