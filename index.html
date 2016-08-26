@@ -11,7 +11,9 @@
 	<meta name="description" content="Flatfy Free Flat and Responsive HTML5 Template ">
 	<meta name="author" content="">
 
-	<title>INW - PASTELERIA</title>
+	<title>LORENA'S BAKERY</title>
+
+	<link rel="shortcut icon" type="image/x-icon" href="imagenes/favicon.ico">
 
 	<!-- Bootstrap core CSS -->
 	<link href="css/bootstrap.min.css" rel="stylesheet">
@@ -34,6 +36,7 @@
 	<link href="css/owl.carousel.css" rel="stylesheet">
 	<link href="css/owl.theme.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/style3.css">
 	<link href="css/animate.css" rel="stylesheet">
 
 	<!-- Magnific Popup core CSS file -->
@@ -459,7 +462,7 @@
 				<div id="screen" class="content-section-b">
 					<div class="container">
 						<div class="row">
-						<div class="col-md-12 text-center wrap_title grid chef-posts" id="portfolio">
+							<div class="col-md-12 text-center wrap_title grid chef-posts" id="portfolio">
 								<h2>Nuestros chefs</h2>
 
 								<div class="chef-3 element-item generico col-sm-4 col-xs-6 portfolio-item" data-category="transition">
@@ -530,153 +533,191 @@
 						</div>
 
 						<!--SURE THIS DONT WORK ON OTHER RESOLUTIONS :'V-->
-					    <div class="chef-box">
-						<div class="chef-hat" id="chef-hat"></div>
+						<div class="chef-box">
+							<div class="chef-hat" id="chef-hat"></div>
 						</div>
 						<script>
- 
+
 						// Create cross browser requestAnimationFrame method:
 						window.requestAnimationFrame = window.requestAnimationFrame
-						 || window.mozRequestAnimationFrame
-						 || window.webkitRequestAnimationFrame
-						 || window.msRequestAnimationFrame
-						 || function(f){setTimeout(f, 1000/60)}
-						 
+						|| window.mozRequestAnimationFrame
+						|| window.webkitRequestAnimationFrame
+						|| window.msRequestAnimationFrame
+						|| function(f){setTimeout(f, 1000/60)}
+
 						var bubble1 = document.getElementById('chef-hat')
-						 
+
 						function parallaxbubbles(){
 						 var scrolltop = window.pageYOffset // get number of pixels document has scrolled vertically 
 						 bubble1.style.top = 3450 -scrolltop * .2 + 'px' // move bubble1 at 20% of scroll rate
 						}
-						 
+
 						window.addEventListener('scroll', function(){ // on page scroll
 						 requestAnimationFrame(parallaxbubbles) // call parallaxbubbles() on next available screen paint
 						}, false)
-						 
-						</script>
-						</div>
 
+					</script>
+				</div>
+
+			</div>
+
+
+		</div>
+
+	</div>
+</div>
+<footer class="parallax-section">
+	<div class="container">
+
+		<!-- Boletín de Noticias-->
+		<div class="row">
+
+			<div class="col-md-6 col-sm-6 col-xs-12 mensaje">
+				<h3 style="margin: 0 0 10.5px;">¡Suscribase a nuestro boletín de ofertas!</h3>
+			</div>
+			<div class="col-md-6 col-sm-6 col-xs-12">
+				<div class="col-mg-6">
+					<div class="input-group">
+						<input type="text" class="form-control" placeholder="Recipient's username" aria-describedby="basic-addon2">
+						<span class="input-group-addon glyphicon glyphicon-arrow-right" id="basic-addon2"></span>
+					</div>
+				</div><!-- /.col-lg-6 -->
+			</div>
+
+		</div>
+		<!-- Información de Contacto y demas-->
+		<div class="row">
+			<hr>
+			<div class="col-md-4 col-xs-12 wow fadeInUp" data-wow-delay="0.6s">
+				<h3>Cotáctenos</h3>
+				<div class="ph">
+					<p><i class="fa fa-phone"></i>Télefono</p>
+					<h4>+503  2535 5012</h4>
+				</div>
+				<div class="address">
+					<p><i class="fa fa-map-marker"></i> Dirección </p>
+					<h4> 1a. Calle Pte. y 69 Av. Norte # 300, Col. Escalón </h4>
+				</div>
+
+				<h3 class="heading">Horario</h3>
+				<p>Lunes-Viernes <span>9:00 AM - 8:00 PM</span></p>
+				<p>Sabado <span>11:30 AM - 5:00 PM</span></p>
+				<p>Domingo <span>10:30 AM - 5:00 PM</span></p>
+
+			</div>
+			<div class="col-md-4 col-xs-12 wow fadeInUp" data-wow-delay="0.6s">
+				<h3 class="heading">Siguenos</h3>
+				<ul class="social-icon2">
+					<li><a href="#" class="fa fa-facebook wow bounceIn" data-wow-delay="0.3s"></a></li>
+					<li><a href="#" class="fa fa-twitter wow bounceIn" data-wow-delay="0.6s"></a></li>
+					<li><a href="#" class="fa fa-instagram wow bounceIn" data-wow-delay="0.9s"></a></li>
+					<li><a href="#" class="fa fa-pinterest wow bounceIn" data-wow-delay="0.9s"></a></li>
+					<li><a href="#" class="fa fa-envelope wow bounceIn" data-wow-delay="0.9s"></a></li>
+
+
+				</ul>
+
+
+
+			</div>
+			<div class="col-md-4 col-xs-12 wow fadeInUp" data-wow-delay="0.6s">
+				<h3 class="heading">Escribanos sus preguntas </h3>
+				<form role="form" method="post">
+
+					<div class="form-group">
+						<label for="InputName">Escribe tu nombre</label>
+						<div class="input-group">
+							<input type="text" class="form-control" name="InputName" id="InputName" placeholder="Enter Name" required>
+							<span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span>
+						</div>
 					</div>
 
+					<div class="form-group">
+						<label for="InputEmail">Tu correo electronico</label>
+						<div class="input-group">
+							<input type="email" class="form-control" id="InputEmail" name="InputEmail" placeholder="Enter Email" required  >
+							<span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label for="InputMessage">Mensaje</label>
+						<div class="input-group">
+							<textarea name="InputMessage" id="InputMessage" class="form-control" rows="5" required></textarea>
+							<span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span>
+						</div>
+					</div>
+
+					<input type="submit" name="submit" id="submit" value="Submit" class="btn wow tada btn-embossed btn-primary pull-right">
+
+					<div class="clearfix"></div>  	
+
+
+				</form>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Sucursales -->
+	<div class="mapa-section">
+	<div  class="slide container ">
+
+		<div class="iframe_mapa">
+			<img class="ratio" src="imagenes/ratio.png">
+			<iframe src="https://www.google.com/maps/d/embed?mid=1o_kvFpCWc-rTdiw1NgTDcOHokGc"></iframe>
+		</div> 
+	</div>
+	</div>
+
+
+
+
+	<!-- CopyRight  -->
+	<section id="copyright">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 col-sm-12">
+					<h3>LORENA'S BAKERY</h3>
+					<p>Copyright © LORENA´S BAKERY 
+
+						| Diseño: <a rel="nofollow" href="http://www.grupoMAHBM.com" target="_parent">Grupo MAHBM</a></p>
+					</div>
 
 				</div>
 
-
-				<!-- Contact -->
-				<div id="contact" class="content-section-a">
-					<div class="container">
-						<div class="row">
-
-							<div class="col-md-6 col-md-offset-3 text-center wrap_title">
-								<h2>Contact Us</h2>
-								<p class="lead" style="margin-top:0">A special thanks to Death.</p>
-							</div>
-
-							<form role="form" action="" method="post" >
-								<div class="col-md-6">
-									<div class="form-group">
-										<label for="InputName">Your Name</label>
-										<div class="input-group">
-											<input type="text" class="form-control" name="InputName" id="InputName" placeholder="Enter Name" required>
-											<span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span>
-										</div>
-									</div>
-
-									<div class="form-group">
-										<label for="InputEmail">Your Email</label>
-										<div class="input-group">
-											<input type="email" class="form-control" id="InputEmail" name="InputEmail" placeholder="Enter Email" required  >
-											<span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span>
-										</div>
-									</div>
-
-									<div class="form-group">
-										<label for="InputMessage">Message</label>
-										<div class="input-group">
-											<textarea name="InputMessage" id="InputMessage" class="form-control" rows="5" required></textarea>
-											<span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span>
-										</div>
-									</div>
-
-									<input type="submit" name="submit" id="submit" value="Submit" class="btn wow tada btn-embossed btn-primary pull-right">
-								</div>
-							</form>
-
-							<hr class="featurette-divider hidden-lg">
-							<div class="col-md-5 col-md-push-1 address">
-								<address>
-									<h3>Office Location</h3>
-									<p class="lead"><a href="https://www.google.com/maps/preview?ie=UTF-8&q=The+Pentagon&fb=1&gl=us&hq=1400+Defense+Pentagon+Washington,+DC+20301-1400&cid=12647181945379443503&ei=qmYfU4H8LoL2oATa0IHIBg&ved=0CKwBEPwSMAo&safe=on">The Pentagon<br>
-										Washington, DC 20301</a><br>
-										Phone: XXX-XXX-XXXX<br>
-										Fax: XXX-XXX-YYYY</p>
-									</address>
-
-									<h3>Social</h3>
-									<li class="social"> 
-										<a href="#"><i class="fa fa-facebook-square fa-size"> </i></a>
-										<a href="#"><i class="fa  fa-twitter-square fa-size"> </i> </a> 
-										<a href="#"><i class="fa fa-google-plus-square fa-size"> </i></a>
-										<a href="#"><i class="fa fa-flickr fa-size"> </i> </a>
-									</li>
-								</div>
-							</div>
-						</div>
-					</div>
+			</div>
+		</div>
+	</section>
 
 
+	<!-- JavaScript -->
+	<script src="js/functions.js"></script>
+	<script src="js/jquery-1.10.2.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/owl.carousel.js"></script>
+	<script src="js/script.js"></script>
+	<!-- StikyMenu -->
+	<script src="js/stickUp.min.js"></script>
+	<script type="text/javascript">
+		jQuery(function($) {
+			$(document).ready( function() {
+				$('.navbar-default').stickUp();
 
-					<footer>
-						<div class="container">
-							<div class="row">
-								<div class="col-md-7">
-									<h3 class="footer-title">Te esperamos pronto!</h3>
+			});
+		});
 
-								</div> <!-- /col-xs-7 -->
+	</script>
+	<!-- Smoothscroll -->
+	<script type="text/javascript" src="js/jquery.corner.js"></script> 
+	<script src="js/wow.min.js"></script>
+	<script>
+		new WOW().init();
+	</script>
+	<script src="js/classie.js"></script>
+	<script src="js/uiMorphingButton_inflow.js"></script>
+	<!-- Magnific Popup core JS file -->
+	<script src="js/jquery.magnific-popup.js"></script> 
 
-								<div class="col-md-5">
-									<div class="footer-banner">
-										<h3 class="footer-title">Sucursales</h3>
-										<ul>
-											<li>Santa tecla</li>
-											<li>San Salvador</li>
+</body>
 
-										</ul>
-
-									</div>
-								</div>
-							</div>
-						</div>
-					</footer>
-
-					<!-- JavaScript -->
-					<script src="js/functions.js"></script>
-					<script src="js/jquery-1.10.2.js"></script>
-					<script src="js/bootstrap.js"></script>
-					<script src="js/owl.carousel.js"></script>
-					<script src="js/script.js"></script>
-					<!-- StikyMenu -->
-					<script src="js/stickUp.min.js"></script>
-					<script type="text/javascript">
-						jQuery(function($) {
-							$(document).ready( function() {
-								$('.navbar-default').stickUp();
-
-							});
-						});
-
-					</script>
-					<!-- Smoothscroll -->
-					<script type="text/javascript" src="js/jquery.corner.js"></script> 
-					<script src="js/wow.min.js"></script>
-					<script>
-						new WOW().init();
-					</script>
-					<script src="js/classie.js"></script>
-					<script src="js/uiMorphingButton_inflow.js"></script>
-					<!-- Magnific Popup core JS file -->
-					<script src="js/jquery.magnific-popup.js"></script> 
-
-				</body>
-
-				</html>
+</html>
