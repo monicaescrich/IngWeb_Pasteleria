@@ -4,8 +4,8 @@ Este es un proyecto realizado con fines educativos en el marco del desarrollo de
 
 ### TECNOLOGÍAS IMPLEMENTADAS
 
-* [Twitter Bootstrap] - great UI boilerplate for modern web apps
-* [jQuery] - duh
+* [Twitter Bootstrap](http://getbootstrap.com/) - great UI boilerplate for modern web apps
+* [jQuery](https://jquery.com/) - duh
 * [Isotope](http://isotope.metafizzy.co/) - Filter & sort magical layouts
 * [Three.js](http://threejs.org/) - Lightweight 3D library with a very low level of complexity
 
