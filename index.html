@@ -144,424 +144,511 @@
 		<img class="capa capa1" src="imagenes/p1r2.png" data-depth='0.50' data-type='parallax'>
 		<img class="capa capa2" src="imagenes/p2r2.png" data-depth='1.35' data-type='parallax'>
 		<img class="capa capa3" src="imagenes/p3r2.png" data-depth='2.10' data-type='parallax'>
-	
-	<script type="text/javascript">
-	window.addEventListener('scroll', function(event) {
-		var depth, i, layer, layers, len, movement, topDistance, translate3d;
-		topDistance = this.pageYOffset;
-		layers = document.querySelectorAll("[data-type='parallax']");
-		if(topDistance > 1600 && topDistance <=2630)
-		{
-			topDistance = topDistance - 1560;
-			for (i = 0, len = layers.length; i < len; i++) {
-				if(i == 0 && topDistance <=520 )
-				{
-					layer = layers[i];
-					depth = layer.getAttribute('data-depth');
-					movement = -(topDistance * depth);
-					translate3d = 'translate3d(0, ' + movement + 'px, 0)';
-					layer.style['-webkit-transform'] = translate3d;
-					layer.style['-moz-transform'] = translate3d;
-					layer.style['-ms-transform'] = translate3d;
-					layer.style['-o-transform'] = translate3d;
-					layer.style.transform = translate3d;
-				}
-				if(i == 1 && topDistance <=530 )
-				{
-					layer = layers[i];
-					depth = layer.getAttribute('data-depth');
-					movement = -(topDistance * depth);
-					translate3d = 'translate3d(0, ' + movement + 'px, 0)';
-					layer.style['-webkit-transform'] = translate3d;
-					layer.style['-moz-transform'] = translate3d;
-					layer.style['-ms-transform'] = translate3d;
-					layer.style['-o-transform'] = translate3d;
-					layer.style.transform = translate3d;
-				}
-				if(i == 2 && topDistance <=600 )
-				{
-					layer = layers[i];
-					depth = layer.getAttribute('data-depth');
-					movement = -(topDistance * depth);
-					translate3d = 'translate3d(0, ' + movement + 'px, 0)';
-					layer.style['-webkit-transform'] = translate3d;
-					layer.style['-moz-transform'] = translate3d;
-					layer.style['-ms-transform'] = translate3d;
-					layer.style['-o-transform'] = translate3d;
-					layer.style.transform = translate3d;
-				}
-			}
-		}
-		else if (topDistance > 1600 && topDistance < 1600)
-		{
-			topDistance = topDistance - 400;
-			for (i = 0, len = layers.length; i < len; i++) {
-				if(i == 0 )
-				{
-					layer = layers[i];
-					depth = layer.getAttribute('data-depth');
-					movement = -(topDistance * depth) + ((topDistance-520)*depth) + ((topDistance - 1030)  * 0);
-					translate3d = 'translate3d(0, ' + movement + 'px, 0)';
-					layer.style['-webkit-transform'] = translate3d;
-					layer.style['-moz-transform'] = translate3d;
-					layer.style['-ms-transform'] = translate3d;
-					layer.style['-o-transform'] = translate3d;
-					layer.style.transform = translate3d;
-				}
-				if(i == 1 )
-				{
-					layer = layers[i];
-					depth = layer.getAttribute('data-depth');
-					movement = -(topDistance * depth) + ((topDistance - 520)*depth) + ((topDistance - 1030)  * 0);
-					translate3d = 'translate3d(0, ' + movement + 'px, 0)';
-					layer.style['-webkit-transform'] = translate3d;
-					layer.style['-moz-transform'] = translate3d;
-					layer.style['-ms-transform'] = translate3d;
-					layer.style['-o-transform'] = translate3d;
-					layer.style.transform = translate3d;
-				}
-				if(i == 2)
-				{
-					layer = layers[i];
-					depth = layer.getAttribute('data-depth');
-					movement = -(topDistance * depth) + ((topDistance - 630)*depth) + ((topDistance - 1030)  * 0);
-					translate3d = 'translate3d(0, ' + movement + 'px, 0)';
-					layer.style['-webkit-transform'] = translate3d;
-					layer.style['-moz-transform'] = translate3d;
-					layer.style['-ms-transform'] = translate3d;
-					layer.style['-o-transform'] = translate3d;
-					layer.style.transform = translate3d;
-				}
-			}
-		}
-	});
-	</script>
 
-	<!-- Portfolio Grid Section -->
+		<script type="text/javascript">
+			window.addEventListener('scroll', function(event) {
+				var depth, i, layer, layers, len, movement, topDistance, translate3d;
+				topDistance = this.pageYOffset;
+				layers = document.querySelectorAll("[data-type='parallax']");
+				if(topDistance > 1600 && topDistance <=2630)
+				{
+					topDistance = topDistance - 1560;
+					for (i = 0, len = layers.length; i < len; i++) {
+						if(i == 0 && topDistance <=520 )
+						{
+							layer = layers[i];
+							depth = layer.getAttribute('data-depth');
+							movement = -(topDistance * depth);
+							translate3d = 'translate3d(0, ' + movement + 'px, 0)';
+							layer.style['-webkit-transform'] = translate3d;
+							layer.style['-moz-transform'] = translate3d;
+							layer.style['-ms-transform'] = translate3d;
+							layer.style['-o-transform'] = translate3d;
+							layer.style.transform = translate3d;
+						}
+						if(i == 1 && topDistance <=530 )
+						{
+							layer = layers[i];
+							depth = layer.getAttribute('data-depth');
+							movement = -(topDistance * depth);
+							translate3d = 'translate3d(0, ' + movement + 'px, 0)';
+							layer.style['-webkit-transform'] = translate3d;
+							layer.style['-moz-transform'] = translate3d;
+							layer.style['-ms-transform'] = translate3d;
+							layer.style['-o-transform'] = translate3d;
+							layer.style.transform = translate3d;
+						}
+						if(i == 2 && topDistance <=600 )
+						{
+							layer = layers[i];
+							depth = layer.getAttribute('data-depth');
+							movement = -(topDistance * depth);
+							translate3d = 'translate3d(0, ' + movement + 'px, 0)';
+							layer.style['-webkit-transform'] = translate3d;
+							layer.style['-moz-transform'] = translate3d;
+							layer.style['-ms-transform'] = translate3d;
+							layer.style['-o-transform'] = translate3d;
+							layer.style.transform = translate3d;
+						}
+					}
+				}
+				else if (topDistance > 1600 && topDistance < 1600)
+				{
+					topDistance = topDistance - 400;
+					for (i = 0, len = layers.length; i < len; i++) {
+						if(i == 0 )
+						{
+							layer = layers[i];
+							depth = layer.getAttribute('data-depth');
+							movement = -(topDistance * depth) + ((topDistance-520)*depth) + ((topDistance - 1030)  * 0);
+							translate3d = 'translate3d(0, ' + movement + 'px, 0)';
+							layer.style['-webkit-transform'] = translate3d;
+							layer.style['-moz-transform'] = translate3d;
+							layer.style['-ms-transform'] = translate3d;
+							layer.style['-o-transform'] = translate3d;
+							layer.style.transform = translate3d;
+						}
+						if(i == 1 )
+						{
+							layer = layers[i];
+							depth = layer.getAttribute('data-depth');
+							movement = -(topDistance * depth) + ((topDistance - 520)*depth) + ((topDistance - 1030)  * 0);
+							translate3d = 'translate3d(0, ' + movement + 'px, 0)';
+							layer.style['-webkit-transform'] = translate3d;
+							layer.style['-moz-transform'] = translate3d;
+							layer.style['-ms-transform'] = translate3d;
+							layer.style['-o-transform'] = translate3d;
+							layer.style.transform = translate3d;
+						}
+						if(i == 2)
+						{
+							layer = layers[i];
+							depth = layer.getAttribute('data-depth');
+							movement = -(topDistance * depth) + ((topDistance - 630)*depth) + ((topDistance - 1030)  * 0);
+							translate3d = 'translate3d(0, ' + movement + 'px, 0)';
+							layer.style['-webkit-transform'] = translate3d;
+							layer.style['-moz-transform'] = translate3d;
+							layer.style['-ms-transform'] = translate3d;
+							layer.style['-o-transform'] = translate3d;
+							layer.style.transform = translate3d;
+						}
+					}
+				}
+			});
+		</script>
+
+		<!-- Portfolio Grid Section -->
+
+		<div id="screen" class="content-section-b">
+			<div class="container">
+				<div class="row-fluid" >
+					<div class="col-md-12 text-center wrap_title ">
+						<h2>Panoramica Local</h2>
+					</div>
+				</div>
+				<div class="row-fluid">
+
+					<div class="container fucknigga">
+						<iframe width="100%" height="100%" allowfullscreen style="border-style:none;" src="pannellum.htm?panorama=img/panoramic/bravebird.jpg&amp;title=Visita%20Nuestro%20Local&amp;preview=img/panoramic/examplepano-preview.jpg"></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+	</div>
 
 	<div id="screen" class="content-section-b">
 		<div class="container">
 			<div class="row-fluid" >
 				<div class="col-md-12 text-center wrap_title ">
-					<h2>Panoramica Local</h2>
+					<h2>Productos</h2>
 				</div>
 			</div>
+
 			<div class="row-fluid">
 
-				<div class="container fucknigga">
-					<iframe width="100%" height="100%" allowfullscreen style="border-style:none;" src="pannellum.htm?panorama=img/panoramic/bravebird.jpg&amp;title=Visita%20Nuestro%20Local&amp;preview=img/panoramic/examplepano-preview.jpg"></iframe>
-				</div>
-			</div>
-		</div>
-	</div>
 
+				<div class="big-demo" data-js-module="hero-demo">
 
-
-</div>
-
-<div id="screen" class="content-section-b">
-	<div class="container">
-		<div class="row-fluid" >
-			<div class="col-md-12 text-center wrap_title ">
-				<h2>Productos</h2>
-			</div>
-		</div>
-
-		<div class="row-fluid">
-
-
-			<div class="big-demo" data-js-module="hero-demo">
-
-				<div class="ui-group">
-					<h3 class="ui-group__title">filtrar</h3>
-					<div class="filters button-group js-radio-button-group">
-						<button class="button is-checked" data-filter="*">Mostrar todos</button>
-						<button class="button" data-filter=".generico">Genericos</button>
-						<button class="button" data-filter=".infantil">Infantil</button>
-						<button class="button" data-filter=".piso">Piso</button>
-						<button class="button" data-filter=".spec">Especiales</button>
+					<div class="ui-group">
+						<h3 class="ui-group__title">filtrar</h3>
+						<div class="filters button-group js-radio-button-group">
+							<button class="button is-checked" data-filter="*">Mostrar todos</button>
+							<button class="button" data-filter=".generico">Genericos</button>
+							<button class="button" data-filter=".infantil">Infantil</button>
+							<button class="button" data-filter=".piso">Piso</button>
+							<button class="button" data-filter=".spec">Especiales</button>
+						</div>
 					</div>
-				</div>
 
-				<div class="grid chef-posts" id="portfolio">
+					<div class="grid chef-posts" id="portfolio">
 
-					<div class="chef-1 element-item generico col-sm-4 col-xs-6 portfolio-item" data-category="transition">
-						<h3 class="text-center">Calavera</h3>
-						<a href="#portfolioModal1" class="portfolio-link" data-toggle="modal" data-target="#portafolioModal1">
-							<div class="caption">
+						<div class="chef-1 element-item generico col-sm-4 col-xs-6 portfolio-item" data-category="transition">
+							<h3 class="text-center">Calavera</h3>
+							<a href="#portfolioModal1" class="portfolio-link" data-toggle="modal" data-target="#portafolioModal1">
 								<div class="caption">
-									<i class="fa fa-search-plus fa-3x centered">
-									</i>
-								</div>
-							</div>
-							<img src="img/genericos/Calavera.jpg" class="img-responsive" alt=""/></a>
-						</a>
-					</div>
-
-					<div class="chef-2 element-item infantil col-sm-4 col-xs-6 portfolio-item" data-category="transition">
-						<h3 class="text-center">Angry Birds</h3>
-						<a href="#portfolioModal1" class="portfolio-link" data-toggle="modal" data-target="#portafolioModal1">
-							<div class="caption">
-								<div class="caption">
-									<i class="fa fa-search-plus fa-3x centered">
-									</i>
-								</div>
-							</div>
-							<img src="img/infantiles/AngryBirds.jpg" class="img-responsive" alt=""/></a>
-						</a>
-					</div>
-
-					<div class="chef-3 element-item generico col-sm-4 col-xs-6 portfolio-item" data-category="transition">
-						<h3 class="text-center">Basketball</h3>
-						<a href="#portfolioModal1" class="portfolio-link" data-toggle="modal" data-target="#portafolioModal1">
-							<div class="caption">
-								<div class="caption">
-									<i class="fa fa-search-plus fa-3x centered">
-									</i>
-								</div>
-							</div>
-							<img src="img/genericos/Basketball.jpg" class="img-responsive" alt=""/></a>
-						</a>
-					</div>
-
-					<div class="element-item infantil col-sm-4 col-xs-6 portfolio-item" data-category="transition">
-						<h3 class="text-center">Minion</h3>
-						<a href="#portfolioModal1" class="portfolio-link" data-toggle="modal" data-target="#portafolioModal1">
-							<div class="caption">
-								<div class="caption">
-									<i class="fa fa-search-plus fa-3x centered">
-									</i>
-								</div>
-							</div>
-							<img src="img/infantiles/CaradeMinion.jpg" class="img-responsive" alt=""/></a>
-						</a>
-					</div>
-
-					<div class="element-item piso col-sm-4 col-xs-6 portfolio-item" data-category="transition">
-						<h3 class="text-center">Hiedra</h3>
-						<a href="#portfolioModal1" class="portfolio-link" data-toggle="modal" data-target="#portafolioModal1">
-							<div class="caption">
-								<div class="caption">
-									<i class="fa fa-search-plus fa-3x centered">
-									</i>
-								</div>
-							</div>
-							<img src="img/piso/hiedra.jpg" class="img-responsive" alt=""/></a>
-						</a>
-					</div>
-
-					<div class="element-item spec col-sm-4 col-xs-6 portfolio-item" data-category="transition">
-						<h3 class="text-center">Honores</h3>
-						<a href="#portfolioModal1" class="portfolio-link" data-toggle="modal" data-target="#portafolioModal1">
-							<div class="caption">
-								<div class="caption">
-									<i class="fa fa-search-plus fa-3x centered">
-									</i>
-								</div>
-							</div>
-							<img src="img/spec/birreteydiploma.jpg" class="img-responsive" alt=""/></a>
-						</a>
-					</div>
-
-					<div class="element-item piso col-sm-4 col-xs-6 portfolio-item" data-category="transition">
-						<h3 class="text-center">Magistral</h3>
-						<a href="#portfolioModal1" class="portfolio-link" data-toggle="modal" data-target="#portafolioModal1">
-							<div class="caption">
-								<div class="caption">
-									<i class="fa fa-search-plus fa-3x centered">
-									</i>
-								</div>
-							</div>
-							<img src="img/piso/magistral.jpg" class="img-responsive" alt=""/></a>
-						</a>
-					</div>
-
-					<div class="element-item spec col-sm-4 col-xs-6 portfolio-item" data-category="transition">
-						<h3 class="text-center">Graduado</h3>
-						<a href="#portfolioModal1" class="portfolio-link" data-toggle="modal" data-target="#portafolioModal1">
-							<div class="caption">
-								<div class="caption">
-									<i class="fa fa-search-plus fa-3x centered">
-									</i>
-								</div>
-							</div>
-							<img src="img/spec/graduadofeliz.jpg" class="img-responsive" alt=""/></a>
-						</a>
-					</div>
-
-					<div class="element-item generico col-sm-4 col-xs-6 portfolio-item" data-category="transition">
-						<h3 class="text-center">Fresas</h3>
-						<a href="#portfolioModal1" class="portfolio-link" data-toggle="modal" data-target="#portafolioModal1">
-							<div class="caption">
-								<div class="caption">
-									<i class="fa fa-search-plus fa-3x centered">
-									</i>
-								</div>
-							</div>
-							<img src="img/genericos/Fresas.jpg" class="img-responsive" alt=""/></a>
-						</a>
-					</div>
-
-					<div class="portfolio-modal modal fade" id="portafolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-						<div class="modal-content">
-							<div class="close-modal" data-dismiss="modal">
-								<div class="lr">
-									<div class="rl">
+									<div class="caption">
+										<i class="fa fa-search-plus fa-3x centered">
+										</i>
 									</div>
 								</div>
-							</div>
-							<div class="container">
-								<div class="row">
-									<div class="col-lg-8 col-lg-offset-2">
-										<div class="modal-body">
-											<h2>Información del producto</h2>
-											<hr class="star-primary">
-											<img src="img/molang.jpg" class="img-responsive img-centered" alt="" class="">
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vehicula, arcu eu vestibulum dignissim, turpis ligula pulvinar lacus, sit amet finibus ante nibh et augue. Maecenas ante nisl, fringilla eget urna vitae, auctor vehicula tellus. Sed vehicula erat sed neque convallis tempor. Vivamus massa enim, finibus eget elit ac, pulvinar pellentesque tellus. Quisque dignissim massa et lorem maximus, vehicula malesuada nulla egestas. In arcu lectus, mollis sed aliquet sed, lacinia vel risus. Nulla nec convallis lacus, ac tincidunt sem. Integer vehicula sapien nunc, in elementum enim vulputate in.</p>
-											<button type="button" class="btn btn-default center-block" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+								<img src="img/genericos/Calavera.jpg" class="img-responsive" alt=""/></a>
+							</a>
+						</div>
+
+						<div class="chef-2 element-item infantil col-sm-4 col-xs-6 portfolio-item" data-category="transition">
+							<h3 class="text-center">Angry Birds</h3>
+							<a href="#portfolioModal1" class="portfolio-link" data-toggle="modal" data-target="#portafolioModal1">
+								<div class="caption">
+									<div class="caption">
+										<i class="fa fa-search-plus fa-3x centered">
+										</i>
+									</div>
+								</div>
+								<img src="img/infantiles/AngryBirds.jpg" class="img-responsive" alt=""/></a>
+							</a>
+						</div>
+
+						<div class="chef-3 element-item generico col-sm-4 col-xs-6 portfolio-item" data-category="transition">
+							<h3 class="text-center">Basketball</h3>
+							<a href="#portfolioModal1" class="portfolio-link" data-toggle="modal" data-target="#portafolioModal1">
+								<div class="caption">
+									<div class="caption">
+										<i class="fa fa-search-plus fa-3x centered">
+										</i>
+									</div>
+								</div>
+								<img src="img/genericos/Basketball.jpg" class="img-responsive" alt=""/></a>
+							</a>
+						</div>
+
+						<div class="element-item infantil col-sm-4 col-xs-6 portfolio-item" data-category="transition">
+							<h3 class="text-center">Minion</h3>
+							<a href="#portfolioModal1" class="portfolio-link" data-toggle="modal" data-target="#portafolioModal1">
+								<div class="caption">
+									<div class="caption">
+										<i class="fa fa-search-plus fa-3x centered">
+										</i>
+									</div>
+								</div>
+								<img src="img/infantiles/CaradeMinion.jpg" class="img-responsive" alt=""/></a>
+							</a>
+						</div>
+
+						<div class="element-item piso col-sm-4 col-xs-6 portfolio-item" data-category="transition">
+							<h3 class="text-center">Hiedra</h3>
+							<a href="#portfolioModal1" class="portfolio-link" data-toggle="modal" data-target="#portafolioModal1">
+								<div class="caption">
+									<div class="caption">
+										<i class="fa fa-search-plus fa-3x centered">
+										</i>
+									</div>
+								</div>
+								<img src="img/piso/hiedra.jpg" class="img-responsive" alt=""/></a>
+							</a>
+						</div>
+
+						<div class="element-item spec col-sm-4 col-xs-6 portfolio-item" data-category="transition">
+							<h3 class="text-center">Honores</h3>
+							<a href="#portfolioModal1" class="portfolio-link" data-toggle="modal" data-target="#portafolioModal1">
+								<div class="caption">
+									<div class="caption">
+										<i class="fa fa-search-plus fa-3x centered">
+										</i>
+									</div>
+								</div>
+								<img src="img/spec/birreteydiploma.jpg" class="img-responsive" alt=""/></a>
+							</a>
+						</div>
+
+						<div class="element-item piso col-sm-4 col-xs-6 portfolio-item" data-category="transition">
+							<h3 class="text-center">Magistral</h3>
+							<a href="#portfolioModal1" class="portfolio-link" data-toggle="modal" data-target="#portafolioModal1">
+								<div class="caption">
+									<div class="caption">
+										<i class="fa fa-search-plus fa-3x centered">
+										</i>
+									</div>
+								</div>
+								<img src="img/piso/magistral.jpg" class="img-responsive" alt=""/></a>
+							</a>
+						</div>
+
+						<div class="element-item spec col-sm-4 col-xs-6 portfolio-item" data-category="transition">
+							<h3 class="text-center">Graduado</h3>
+							<a href="#portfolioModal1" class="portfolio-link" data-toggle="modal" data-target="#portafolioModal1">
+								<div class="caption">
+									<div class="caption">
+										<i class="fa fa-search-plus fa-3x centered">
+										</i>
+									</div>
+								</div>
+								<img src="img/spec/graduadofeliz.jpg" class="img-responsive" alt=""/></a>
+							</a>
+						</div>
+
+						<div class="element-item generico col-sm-4 col-xs-6 portfolio-item" data-category="transition">
+							<h3 class="text-center">Fresas</h3>
+							<a href="#portfolioModal1" class="portfolio-link" data-toggle="modal" data-target="#portafolioModal1">
+								<div class="caption">
+									<div class="caption">
+										<i class="fa fa-search-plus fa-3x centered">
+										</i>
+									</div>
+								</div>
+								<img src="img/genericos/Fresas.jpg" class="img-responsive" alt=""/></a>
+							</a>
+						</div>
+
+						<div class="portfolio-modal modal fade" id="portafolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+							<div class="modal-content">
+								<div class="close-modal" data-dismiss="modal">
+									<div class="lr">
+										<div class="rl">
+										</div>
+									</div>
+								</div>
+								<div class="container">
+									<div class="row">
+										<div class="col-lg-8 col-lg-offset-2">
+											<div class="modal-body">
+												<h2>Información del producto</h2>
+												<hr class="star-primary">
+												<img src="img/molang.jpg" class="img-responsive img-centered" alt="" class="">
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vehicula, arcu eu vestibulum dignissim, turpis ligula pulvinar lacus, sit amet finibus ante nibh et augue. Maecenas ante nisl, fringilla eget urna vitae, auctor vehicula tellus. Sed vehicula erat sed neque convallis tempor. Vivamus massa enim, finibus eget elit ac, pulvinar pellentesque tellus. Quisque dignissim massa et lorem maximus, vehicula malesuada nulla egestas. In arcu lectus, mollis sed aliquet sed, lacinia vel risus. Nulla nec convallis lacus, ac tincidunt sem. Integer vehicula sapien nunc, in elementum enim vulputate in.</p>
+												<button type="button" class="btn btn-default center-block" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+											</div>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-					</div>
-					<script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
 
-					<script src="js/isotope-docs.min.js"></script>
-
-				</div>
-			</div>
-			<!-- Screenshot -->
-			<div id="screen" class="content-section-b">
-				<div class="container">
-					<div class="row" >
-						<div class="col-md-6 col-md-offset-3 text-center wrap_title ">
-							<h2>Nuestros chefs</h2>
-							<p class="lead" style="margin-top:0">Imagenes de chefsitos</p>
-						</div>
-					</div>
-
-				</div>
-
-
-			</div>
-
-
-			<!-- Contact -->
-			<div id="contact" class="content-section-a">
-				<div class="container">
-					<div class="row">
-
-						<div class="col-md-6 col-md-offset-3 text-center wrap_title">
-							<h2>Contact Us</h2>
-							<p class="lead" style="margin-top:0">A special thanks to Death.</p>
-						</div>
-
-						<form role="form" action="" method="post" >
-							<div class="col-md-6">
-								<div class="form-group">
-									<label for="InputName">Your Name</label>
-									<div class="input-group">
-										<input type="text" class="form-control" name="InputName" id="InputName" placeholder="Enter Name" required>
-										<span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span>
+						<div class="portfolio-modal modal fade" id="portafolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+							<div class="modal-content">
+								<div class="close-modal" data-dismiss="modal">
+									<div class="lr">
+										<div class="rl">
+										</div>
 									</div>
 								</div>
-
-								<div class="form-group">
-									<label for="InputEmail">Your Email</label>
-									<div class="input-group">
-										<input type="email" class="form-control" id="InputEmail" name="InputEmail" placeholder="Enter Email" required  >
-										<span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span>
+								<div class="container">
+									<div class="row">
+										<div class="col-lg-8 col-lg-offset-2">
+											<div class="modal-body">
+												<h2>Información del personal</h2>
+												<hr class="star-primary">
+												<img src="img/pastelero.jpg" alt="" class="">
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vehicula, arcu eu vestibulum dignissim, turpis ligula pulvinar lacus, sit amet finibus ante nibh et augue. Maecenas ante nisl, fringilla eget urna vitae, auctor vehicula tellus. Sed vehicula erat sed neque convallis tempor. Vivamus massa enim, finibus eget elit ac, pulvinar pellentesque tellus. Quisque dignissim massa et lorem maximus, vehicula malesuada nulla egestas. In arcu lectus, mollis sed aliquet sed, lacinia vel risus. Nulla nec convallis lacus, ac tincidunt sem. Integer vehicula sapien nunc, in elementum enim vulputate in.</p>
+												<button type="button" class="btn btn-default center-block" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+											</div>
+										</div>
 									</div>
 								</div>
-
-								<div class="form-group">
-									<label for="InputMessage">Message</label>
-									<div class="input-group">
-										<textarea name="InputMessage" id="InputMessage" class="form-control" rows="5" required></textarea>
-										<span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span>
-									</div>
-								</div>
-
-								<input type="submit" name="submit" id="submit" value="Submit" class="btn wow tada btn-embossed btn-primary pull-right">
-							</div>
-						</form>
-
-						<hr class="featurette-divider hidden-lg">
-						<div class="col-md-5 col-md-push-1 address">
-							<address>
-								<h3>Office Location</h3>
-								<p class="lead"><a href="https://www.google.com/maps/preview?ie=UTF-8&q=The+Pentagon&fb=1&gl=us&hq=1400+Defense+Pentagon+Washington,+DC+20301-1400&cid=12647181945379443503&ei=qmYfU4H8LoL2oATa0IHIBg&ved=0CKwBEPwSMAo&safe=on">The Pentagon<br>
-									Washington, DC 20301</a><br>
-									Phone: XXX-XXX-XXXX<br>
-									Fax: XXX-XXX-YYYY</p>
-								</address>
-
-								<h3>Social</h3>
-								<li class="social"> 
-									<a href="#"><i class="fa fa-facebook-square fa-size"> </i></a>
-									<a href="#"><i class="fa  fa-twitter-square fa-size"> </i> </a> 
-									<a href="#"><i class="fa fa-google-plus-square fa-size"> </i></a>
-									<a href="#"><i class="fa fa-flickr fa-size"> </i> </a>
-								</li>
 							</div>
 						</div>
+						<script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+
+						<script src="js/isotope-docs.min.js"></script>
+
 					</div>
 				</div>
-
-
-
-				<footer>
+				<!-- Screenshot -->
+				<div id="screen" class="content-section-b">
 					<div class="container">
 						<div class="row">
-							<div class="col-md-7">
-								<h3 class="footer-title">Te esperamos pronto!</h3>
+						<div class="col-md-12 text-center wrap_title grid chef-posts" id="portfolio">
+								<h2>Nuestros chefs</h2>
+								<div class="chef-1 element-item col-sm-4 col-xs-6 portfolio-item" data-category="transition">
+									<h3 class="text-center">Monica Escrich</h3>
+									<a href="#portfolioModal1" class="portfolio-link" data-toggle="modal" data-target="#portafolioModal2">
+										<div class="caption">
+											<div class="caption">
+												<i class="fa fa-search-plus fa-3x centered">
+												</i>
+											</div>
+										</div>
+										<img src="img/chefs/1.jpg" class="img-responsive" alt=""/></a>
+									</a>
+								</div>
 
-							</div> <!-- /col-xs-7 -->
+								<div class="chef-2 element-item infantil col-sm-4 col-xs-6 portfolio-item" data-category="transition">
+									<h3 class="text-center">Byron Galvez</h3>
+									<a href="#portfolioModal1" class="portfolio-link" data-toggle="modal" data-target="#portafolioModal2">
+										<div class="caption">
+											<div class="caption">
+												<i class="fa fa-search-plus fa-3x centered">
+												</i>
+											</div>
+										</div>
+										<img src="img/chefs/2.jpg" class="img-responsive" alt=""/></a>
+									</a>
+								</div>
 
-							<div class="col-md-5">
-								<div class="footer-banner">
-									<h3 class="footer-title">Sucursales</h3>
-									<ul>
-										<li>Santa tecla</li>
-										<li>San Salvador</li>
+								<div class="chef-3 element-item generico col-sm-4 col-xs-6 portfolio-item" data-category="transition">
+									<h3 class="text-center">Hugo Palma</h3>
+									<a href="#portfolioModal1" class="portfolio-link" data-toggle="modal" data-target="#portafolioModal2">
+										<div class="caption">
+											<div class="caption">
+												<i class="fa fa-search-plus fa-3x centered">
+												</i>
+											</div>
+										</div>
+										<img src="img/chefs/6.jpg" class="img-responsive" alt=""/></a>
+									</a>
+								</div>
 
-									</ul>
+								<div class="element-item infantil col-sm-4 col-xs-6 portfolio-item" data-category="transition">
+									<h3 class="text-center">Alejandro Paz</h3>
+									<a href="#portfolioModal1" class="portfolio-link" data-toggle="modal" data-target="#portafolioModal2">
+										<div class="caption">
+											<div class="caption">
+												<i class="fa fa-search-plus fa-3x centered">
+												</i>
+											</div>
+										</div>
+										<img src="img/chefs/4.jpg" class="img-responsive" alt=""/></a>
+									</a>
+								</div>
 
+								<div class="element-item piso col-sm-4 col-xs-6 portfolio-item" data-category="transition">
+									<h3 class="text-center">Marvin Rosa</h3>
+									<a href="#portfolioModal1" class="portfolio-link" data-toggle="modal" data-target="#portafolioModal2">
+										<div class="caption">
+											<div class="caption">
+												<i class="fa fa-search-plus fa-3x centered">
+												</i>
+											</div>
+										</div>
+										<img src="img/chefs/5.jpg" class="img-responsive" alt=""/></a>
+									</a>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+
+				</div>
+
+
+				<!-- Contact -->
+				<div id="contact" class="content-section-a">
+					<div class="container">
+						<div class="row">
+
+							<div class="col-md-6 col-md-offset-3 text-center wrap_title">
+								<h2>Contact Us</h2>
+								<p class="lead" style="margin-top:0">A special thanks to Death.</p>
+							</div>
+
+							<form role="form" action="" method="post" >
+								<div class="col-md-6">
+									<div class="form-group">
+										<label for="InputName">Your Name</label>
+										<div class="input-group">
+											<input type="text" class="form-control" name="InputName" id="InputName" placeholder="Enter Name" required>
+											<span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span>
+										</div>
+									</div>
+
+									<div class="form-group">
+										<label for="InputEmail">Your Email</label>
+										<div class="input-group">
+											<input type="email" class="form-control" id="InputEmail" name="InputEmail" placeholder="Enter Email" required  >
+											<span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span>
+										</div>
+									</div>
+
+									<div class="form-group">
+										<label for="InputMessage">Message</label>
+										<div class="input-group">
+											<textarea name="InputMessage" id="InputMessage" class="form-control" rows="5" required></textarea>
+											<span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span>
+										</div>
+									</div>
+
+									<input type="submit" name="submit" id="submit" value="Submit" class="btn wow tada btn-embossed btn-primary pull-right">
+								</div>
+							</form>
+
+							<hr class="featurette-divider hidden-lg">
+							<div class="col-md-5 col-md-push-1 address">
+								<address>
+									<h3>Office Location</h3>
+									<p class="lead"><a href="https://www.google.com/maps/preview?ie=UTF-8&q=The+Pentagon&fb=1&gl=us&hq=1400+Defense+Pentagon+Washington,+DC+20301-1400&cid=12647181945379443503&ei=qmYfU4H8LoL2oATa0IHIBg&ved=0CKwBEPwSMAo&safe=on">The Pentagon<br>
+										Washington, DC 20301</a><br>
+										Phone: XXX-XXX-XXXX<br>
+										Fax: XXX-XXX-YYYY</p>
+									</address>
+
+									<h3>Social</h3>
+									<li class="social"> 
+										<a href="#"><i class="fa fa-facebook-square fa-size"> </i></a>
+										<a href="#"><i class="fa  fa-twitter-square fa-size"> </i> </a> 
+										<a href="#"><i class="fa fa-google-plus-square fa-size"> </i></a>
+										<a href="#"><i class="fa fa-flickr fa-size"> </i> </a>
+									</li>
 								</div>
 							</div>
 						</div>
 					</div>
-				</footer>
 
-				<!-- JavaScript -->
-				<script src="js/functions.js"></script>
-				<script src="js/jquery-1.10.2.js"></script>
-				<script src="js/bootstrap.js"></script>
-				<script src="js/owl.carousel.js"></script>
-				<script src="js/script.js"></script>
-				<!-- StikyMenu -->
-				<script src="js/stickUp.min.js"></script>
-				<script type="text/javascript">
-					jQuery(function($) {
-						$(document).ready( function() {
-							$('.navbar-default').stickUp();
 
+
+					<footer>
+						<div class="container">
+							<div class="row">
+								<div class="col-md-7">
+									<h3 class="footer-title">Te esperamos pronto!</h3>
+
+								</div> <!-- /col-xs-7 -->
+
+								<div class="col-md-5">
+									<div class="footer-banner">
+										<h3 class="footer-title">Sucursales</h3>
+										<ul>
+											<li>Santa tecla</li>
+											<li>San Salvador</li>
+
+										</ul>
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</footer>
+
+					<!-- JavaScript -->
+					<script src="js/functions.js"></script>
+					<script src="js/jquery-1.10.2.js"></script>
+					<script src="js/bootstrap.js"></script>
+					<script src="js/owl.carousel.js"></script>
+					<script src="js/script.js"></script>
+					<!-- StikyMenu -->
+					<script src="js/stickUp.min.js"></script>
+					<script type="text/javascript">
+						jQuery(function($) {
+							$(document).ready( function() {
+								$('.navbar-default').stickUp();
+
+							});
 						});
-					});
 
-				</script>
-				<!-- Smoothscroll -->
-				<script type="text/javascript" src="js/jquery.corner.js"></script> 
-				<script src="js/wow.min.js"></script>
-				<script>
-					new WOW().init();
-				</script>
-				<script src="js/classie.js"></script>
-				<script src="js/uiMorphingButton_inflow.js"></script>
-				<!-- Magnific Popup core JS file -->
-				<script src="js/jquery.magnific-popup.js"></script> 
+					</script>
+					<!-- Smoothscroll -->
+					<script type="text/javascript" src="js/jquery.corner.js"></script> 
+					<script src="js/wow.min.js"></script>
+					<script>
+						new WOW().init();
+					</script>
+					<script src="js/classie.js"></script>
+					<script src="js/uiMorphingButton_inflow.js"></script>
+					<!-- Magnific Popup core JS file -->
+					<script src="js/jquery.magnific-popup.js"></script> 
 
-			</body>
+				</body>
 
-			</html>
+				</html>
