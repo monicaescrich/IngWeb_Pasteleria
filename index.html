@@ -461,8 +461,9 @@
 						<div class="row">
 						<div class="col-md-12 text-center wrap_title grid chef-posts" id="portfolio">
 								<h2>Nuestros chefs</h2>
-								<div class="chef-1 element-item col-sm-4 col-xs-6 portfolio-item" data-category="transition">
-									<h3 class="text-center">Monica Escrich</h3>
+
+								<div class="chef-3 element-item generico col-sm-4 col-xs-6 portfolio-item" data-category="transition">
+									<h3 class="text-center">Hugo Palma</h3>
 									<a href="#portfolioModal1" class="portfolio-link" data-toggle="modal" data-target="#portafolioModal2">
 										<div class="caption">
 											<div class="caption">
@@ -470,7 +471,7 @@
 												</i>
 											</div>
 										</div>
-										<img src="img/chefs/1.jpg" class="img-responsive" alt=""/></a>
+										<img src="img/chefs/6.jpg" class="img-responsive" alt=""/></a>
 									</a>
 								</div>
 
@@ -487,8 +488,8 @@
 									</a>
 								</div>
 
-								<div class="chef-3 element-item generico col-sm-4 col-xs-6 portfolio-item" data-category="transition">
-									<h3 class="text-center">Hugo Palma</h3>
+								<div class="chef-1 element-item col-sm-4 col-xs-6 portfolio-item" data-category="transition">
+									<h3 class="text-center">Monica Escrich</h3>
 									<a href="#portfolioModal1" class="portfolio-link" data-toggle="modal" data-target="#portafolioModal2">
 										<div class="caption">
 											<div class="caption">
@@ -496,7 +497,7 @@
 												</i>
 											</div>
 										</div>
-										<img src="img/chefs/6.jpg" class="img-responsive" alt=""/></a>
+										<img src="img/chefs/1.jpg" class="img-responsive" alt=""/></a>
 									</a>
 								</div>
 
@@ -526,6 +527,33 @@
 									</a>
 								</div>
 							</div>
+						</div>
+
+						<!--SURE THIS DONT WORK ON OTHER RESOLUTIONS :'V-->
+					    <div class="chef-box">
+						<div class="chef-hat" id="chef-hat"></div>
+						</div>
+						<script>
+ 
+						// Create cross browser requestAnimationFrame method:
+						window.requestAnimationFrame = window.requestAnimationFrame
+						 || window.mozRequestAnimationFrame
+						 || window.webkitRequestAnimationFrame
+						 || window.msRequestAnimationFrame
+						 || function(f){setTimeout(f, 1000/60)}
+						 
+						var bubble1 = document.getElementById('chef-hat')
+						 
+						function parallaxbubbles(){
+						 var scrolltop = window.pageYOffset // get number of pixels document has scrolled vertically 
+						 bubble1.style.top = 3450 -scrolltop * .2 + 'px' // move bubble1 at 20% of scroll rate
+						}
+						 
+						window.addEventListener('scroll', function(){ // on page scroll
+						 requestAnimationFrame(parallaxbubbles) // call parallaxbubbles() on next available screen paint
+						}, false)
+						 
+						</script>
 						</div>
 
 					</div>

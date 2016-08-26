@@ -20,6 +20,22 @@ $(window).scroll(function(){
 
   }
 
+  var pContainerHeight = $('.chef-box').height();
+
+$(window).scroll(function(){
+
+  var wScroll = $(this).scrollTop();
+
+  if (wScroll <= pContainerHeight) {
+
+
+    $('.chef-hat').css({
+      'transform' : 'translate(0px, -'+ wScroll /2 +'%)'
+    });
+
+
+  }
+
   
   if(wScroll > $('.chef-posts').offset().top - $(window).height()){
 
