@@ -1267,7 +1267,7 @@ p.copyright {
           user-select: none;
 }
 .imgqs{
-  padding-left:850px;
+  padding-left:1450px;
   height:400px;
 }
 
@@ -1301,7 +1301,7 @@ p.copyright {
   letter-spacing: 0.2px;
   position: absolute;
   top: 40%;
-  left: 35%;
+  left: 40%;
   -webkit-transform: translate3d(-50%, -50%, 0);
           transform: translate3d(-50%, -50%, 0);
 }
